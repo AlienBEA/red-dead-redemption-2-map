@@ -3,8 +3,8 @@
 FROM --platform=linux/arm/v7 node:lts-alpine3.22
 ENV NODE_ENV=production
 ENV APP=/home/node/app
-RUN mkdir -p $APP/node_modules && chown -R node:node /home/node/*
-WORKDIR $APP
+#RUN mkdir -p $APP/node_modules && chown -R node:node /home/node/*
+#WORKDIR $APP
 
 # Copy over tiles before anything else that may actually change, to ensure
 # users don't have to re-download them when new versions are deployed.
