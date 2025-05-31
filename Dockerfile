@@ -1,6 +1,6 @@
 # Setup the environment
 # FROM node:10-alpine
-FROM --platform=linux/arm/v7 node:16.3.1-alpine3.13
+FROM --platform=linux/arm/v7 node:lts-alpine3.22
 ENV NODE_ENV=production
 ENV APP=/home/node/app
 RUN mkdir -p $APP/node_modules && chown -R node:node /home/node/*
