@@ -1,6 +1,6 @@
 # Setup the environment
 # FROM node:10-alpine
-FROM --platform=linux/arm64 node:16-alpine as builder
+FROM --platform=linux/arm64 node:10-alpine as builder
 ENV NODE_ENV=production
 ENV APP=/home/node/app
 RUN mkdir -p $APP/node_modules && chown -R node:node /home/node/*
