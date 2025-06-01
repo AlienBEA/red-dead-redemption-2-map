@@ -36,7 +36,7 @@ FROM ubuntu
 WORKDIR /usr/local/app
 # USER app
 RUN apt update -y && apt upgrade -y
-RUN apt install nodejs -y
+RUN apt install npm -y
 RUN apt install git -y
 RUN git clone https://github.com/the0neWhoKnocks/red-dead-redemption-2-map.git
 RUN cd red-dead-redemption-2-map
